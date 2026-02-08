@@ -22,13 +22,13 @@ form.addEventListener("submit", event => {
   promise
     .then(delay => {
       iziToast.success({
-        message: `Fulfilled promise in 1000ms`,
+        message: `✅ Fulfilled promise in ${delay}ms`,
         position: "topRight",
       });
     })
     .catch(delay => {
       iziToast.error({
-        message: `Rejected promise in 3000ms`,
+        message: `❌ Rejected promise in ${delay}ms`,
         position: "topRight",
       });
     });
