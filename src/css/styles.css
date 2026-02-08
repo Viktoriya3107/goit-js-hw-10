@@ -8,11 +8,44 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
-@import url('./animations.css');
+
 
 /* Sections style */
 @import url('./header.css');
-@import url('./vite-promo.css');
 @import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+
+.timer {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+}
+
+.value {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+#datetime-picker {
+  padding: 6px 8px;
+  margin-right: 8px;
+}
+
+button[data-start] {
+  padding: 6px 14px;
+}
